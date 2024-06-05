@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Build Watch Face",
+        "type": "shell",
+        "command": "monkeyc",
+        "args": [
+          "-o",
+          "${workspaceFolder}/bin/trebb-simple-green.iq",
+          "-m",
+          "${workspaceFolder}/manifest.xml",
+          "-z",
+          "${workspaceFolder}/resources",
+          "-y",
+          "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/developer_key.der",
+          "-w",
+          "${workspaceFolder}/source"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "problemMatcher": [],
+        "detail": "Compiling the project"
+      }
+    ]
+  }

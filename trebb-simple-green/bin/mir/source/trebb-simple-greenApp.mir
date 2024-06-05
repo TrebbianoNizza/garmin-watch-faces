@@ -1,0 +1,57 @@
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 1; ]
+import Toybox.Application;
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 2; ]
+import Toybox.Lang;
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 3; ]
+import Toybox.WatchUi;
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 5; ]
+class trebb_simple_greenApp extends Application.AppBase{
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 5; ]
+    <init> {
+    }
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 5; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 7; ]
+    function initialize() as Void {
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_7_26_9_4_start:
+[ "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc" 8 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_7_26_9_4_stop:
+    }
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 12; ]
+    function onStart(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 16; ]
+    function onStop(state as Dictionary or Null) as Void {
+    }
+    [ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 20; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_20_68_22_4_start:
+[ "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc" 21 8 ]
+        %tmp.1 = newa 1;
+        %tmp.5 = getv ? :trebb_simple_greenView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_20_68_22_4_stop:
+    }
+}
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 26; ]
+function getApp() as trebb_simple_greenApp {
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_26_43_28_0_start:
+[ "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc" 27 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 trebb_simple_greenApp;
+    ret %tmp.4;
+_Users_luchelld_Desarrollo_Workspaces_garmin_workspace_garmin_watch_faces_trebb_simple_green_source_trebb_simple_greenApp_mc_26_43_28_0_stop:
+}
+[ @file = "/Users/luchelld/Desarrollo/Workspaces/garmin-workspace/garmin-watch-faces/trebb-simple-green/source/trebb-simple-greenApp.mc"; @line = 1; ]
+<init> {
+}
